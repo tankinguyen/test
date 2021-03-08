@@ -1,24 +1,73 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h2>What Can JavaScript Do?</h2>
-<p>JavaScript can change HTML attribute values.</p>
-<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-<button onclick="votan()">Turn on the light</button>
-<img id="myImage" src="pic_bulboff.gif" style="width:100px">
-<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
-<script>
-var on=0;
-function votan(){
-	if(on%2==0){
-	document.getElementById('myImage').src='pic_bulbon.gif';
-    on++;
-    setTimeout(function (){  votan()}, 500);
-    }
-    else {document.getElementById('myImage').src='pic_bulboff.gif';
-    on++;
-    setTimeout(function (){  votan()}, 500);}
-}
-</script>
-</body>
+<html lang="en-US">
+    <head>
+        <!--<link rel="stylesheet" href="test.css">-->
+        <style>
+        a {text-decoration:none}
+        body {background-image: url('uname.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size: cover;}
+        </style>
+    </head>
+    <!-- <head>
+        <style>
+        h1 {
+          color: blue;
+          font-family: verdana;
+          font-size: 300%;
+        }
+        p {
+          color: red;
+          font-family: courier;
+          font-size: 160%;
+        }
+        </style>
+        </head>
+      -->
+
+    <body>
+        <h2 style="font-size: 40px;    
+                text-align:center; 
+                color: rgb(255, 75, 20);    
+                background-color: dimgrey;  
+                font-family:cursive;">WHAT CAN JS DO? </h2>
+      <p><a href="#C">Jump to poet</a></p>
+       <a href="test.css"> <img src='image.jpg' width="600" height="500" id = "makalaba" title="this is image" alt="image_game"> </a>
+
+       <img  src="workplace.jpg" alt="Workplace" usemap="#workmap" width="600" height="500">
+      <map name="workmap">
+        <area shape="poly" coords="43,56,61,252,46,453,411,460,402,251,410,56," alt="Computer" target="_blank" href="https://www.thegioididong.com/laptop">
+        <area shape="rect" coords="431,227,501,323" alt="Phone" target="_blank" href="https://www.thegioididong.com/dtdd">
+        <area shape="circle" coords="505,400,60" alt="Cup of coffee" target="_blank" href="https://www.thecoffeehouse.com/">
+      </map>
+    <br>
+
+
+    <button onclick='document.getElementById("makalaba").src ="1545300109_game-lien-quan.gif"'> click me!</button>
+    <button onclick='document.getElementById("makalaba").src ="Minecraft-640.gif"'>Click here!</button>
+    <hr>
+    <br>
+    <a href="https://www.w3schools.com" target="_blank">"This is a link to w3schools"</a>
+
+    <p><a href="test.css">JS</a></p>
+    <p><a href="https://www.w3.org/">W3C</a></p>
+    <p><a href="mailto:tankinguyen2@gmail.com">Send email</a></p>
+
+
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" style="float:right;margin: 70px;">
+    <pre id = 'C' style="color:rgb(65, 2, 238);
+                border: 2px solid Tomato;
+                margin: 60px;
+                padding: 30px;">
+                <del>
+My Bonnie lies over the ocean.
+
+My Bonnie lies over the sea.
+
+My Bonnie lies over the ocean.
+
+Oh, bring back my Bonnie to me.</del></pre>
+    </body>
+
 </html>
